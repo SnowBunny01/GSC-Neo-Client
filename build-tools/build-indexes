@@ -9,7 +9,7 @@ const rootDir = path.resolve(__dirname, '..');
 process.chdir(rootDir);
 
 if (!fs.existsSync('data/Pokemon-Showdown')) {
-	child_process.execSync('git clone https://github.com/Zarel/Pokemon-Showdown.git', {
+	child_process.execSync('git clone https://github.com/SnowBunny01/GSC-Neo-Server.git', {
 		cwd: 'data',
 	});
 }
@@ -20,9 +20,10 @@ child_process.execSync('npm run build', {cwd: 'data/Pokemon-Showdown'});
 console.log("DONE");
 
 const Dex = require('../data/Pokemon-Showdown/.sim-dist/dex').Dex;
+Dex.includeModData()
 const toID = Dex.getId;
 process.stdout.write("Loading gen 6 data... ");
-Dex.includeData();
+Object.assign(Dex.data.Movedex, Dex.dexes.neo.data.Movedex)
 console.log("DONE");
 
 function es3stringify(obj) {
@@ -679,7 +680,7 @@ process.stdout.write("Building `data/teambuilder-tables.js`... ");
 			if (gens.indexOf(7) >= 0 && !vcOnly) learnsets[id][moveid] += 'q';
 		}
 	}
-	const G2Learnsets = Dex.mod('gen2').data.Learnsets;
+	const G2Learnsets = Dex.mod('neo').data.Learnsets;
 	for (const id in G2Learnsets) {
 		const learnset = G2Learnsets[id].learnset;
 		for (const moveid in learnset) {
