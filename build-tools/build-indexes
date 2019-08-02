@@ -23,7 +23,7 @@ const Dex = require('../data/Pokemon-Showdown/.sim-dist/dex').Dex;
 Dex.includeModData()
 const toID = Dex.getId;
 process.stdout.write("Loading gen 6 data... ");
-Object.assign(Dex.data.Movedex, Dex.dexes.neo.data.Movedex)
+Dex.includeData();
 console.log("DONE");
 
 function es3stringify(obj) {
