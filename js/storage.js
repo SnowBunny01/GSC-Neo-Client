@@ -3,7 +3,7 @@ Config.origindomain = 'play.pokemonshowdown.com';
 // address bar is `Config.origindomain`.
 Config.defaultserver = {
 	id: 'showdown',
-	host: 'gsc-neo-server.psim.us',
+	host: 'gsc-neo-server.herokuapp.com',
 	port: 443,
 	httpport: 8000,
 	altport: 80,
