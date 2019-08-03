@@ -93,9 +93,9 @@ function ThemeFooterTemplate() {
 	</script>
 	<script src="//play.pokemonshowdown.com/config/config.js?3a08c6f5"></script>
 	<script src="//play.pokemonshowdown.com/js/battledata.js?7b166f89"></script>
-	<script src="//play.pokemonshowdown.com/data/pokedex-mini.js?0.8431924366359611"></script>
-	<script src="//play.pokemonshowdown.com/data/pokedex-mini-bw.js?0.5645433224383662"></script>
-	<script src="//play.pokemonshowdown.com/data/graphics.js?0.9007907667046748"></script>
+	<script src="//play.pokemonshowdown.com/data/pokedex-mini.js?0.5279735898262528"></script>
+	<script src="//play.pokemonshowdown.com/data/pokedex-mini-bw.js?0.4755552905833471"></script>
+	<script src="//play.pokemonshowdown.com/data/graphics.js?0.9919518248139698"></script>
 	<script src="//play.pokemonshowdown.com/data/pokedex.js?7b9bbed0"></script>
 	<script src="//play.pokemonshowdown.com/data/items.js?43cc11f6"></script>
 	<script src="//play.pokemonshowdown.com/data/moves.js?8c724c14"></script>
